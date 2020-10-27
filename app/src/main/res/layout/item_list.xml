@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layoutDirection="ltr"
+    android:background="@color/colorAccent"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/Student_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="number"
+        android:layout_gravity="start|center_vertical"
+
+        />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/Student_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="passed"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+
+        android:layout_margin="10dp"
+        android:id="@+id/Student_isPassed_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="passed"
+        android:layout_gravity="end|center" />
+
+</LinearLayout>
