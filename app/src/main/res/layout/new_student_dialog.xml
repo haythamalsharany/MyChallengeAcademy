@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/St_no"
+        android:layout_width="106dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:gravity="center_vertical"
+        android:text="student number :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <EditText
+        android:id="@+id/St_no_ed"
+        android:layout_width="162dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/St_no"
+        android:hint="enter number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toEndOf="@+id/St_no"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="number"></EditText>
+
+    <TextView
+        android:id="@+id/St_name"
+        android:layout_width="106dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:text="student name :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/St_no"></TextView>
+
+    <EditText
+        android:id="@+id/St_name_ed"
+        android:layout_width="162dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/St_name"
+        android:hint="enter name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toEndOf="@+id/St_name"
+        app:layout_constraintTop_toBottomOf="@+id/St_no_ed">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/pass_tv"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="passed "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/St_name"></TextView>
+
+    <CheckBox
+        android:id="@+id/passed_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="168dp"
+        android:layout_toRightOf="@id/pass_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toEndOf="@+id/pass_tv"
+        app:layout_constraintTop_toBottomOf="@+id/St_name_ed"></CheckBox>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

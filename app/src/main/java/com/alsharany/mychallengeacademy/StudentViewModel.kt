@@ -16,5 +16,14 @@ class StudentViewModel : ViewModel() {
         }
     }
 
+    fun addStudent(student: Student) {
+        Students.add(student)
+    }
+
+    fun deleteStudent(index: Int) {
+        Students.removeAt(index)
+
+    }
+
 
 }
